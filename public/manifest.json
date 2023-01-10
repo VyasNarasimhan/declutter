@@ -1,25 +1,30 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+    "manifest_version": 3,
+    "name": "Productivity",
+    "version": "1.0.0",
+    "description": "The productivity chrome extension designed to make you aware of distractions and help you reduce their impact",
+    "author": "Vyas Narasimhan",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Productivity"
     },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
     },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "permissions": [
+        "tabs",
+        "storage",
+        "alarms",
+        "tabGroups",
+        "scripting",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+              "matches": ["<all_urls>"],
+              "js": ["js/inject.js"]
+        }
+    ],
+    "host_permissions": ["<all_urls>"]
 }
