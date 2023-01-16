@@ -1,4 +1,4 @@
-# Productivity Extension
+# Declutter
 
 This chrome extension tracks the time spent on every website per day. It also allows the user to flag certain websites and group all of them at once in order to focus on other tasks.
 
