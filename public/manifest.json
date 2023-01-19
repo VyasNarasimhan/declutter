@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Declutter",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "The productivity chrome extension designed to make you aware of distractions and help you reduce their impact.",
     "author": "Vyas Narasimhan",
     "action": {
