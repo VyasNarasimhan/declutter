@@ -6,7 +6,7 @@
     "author": "Vyas Narasimhan",
     "action": {
         "default_popup": "index.html",
-        "default_title": "Productivity"
+        "default_title": "Declutter"
     },
     "background": {
         "service_worker": "background.js",
