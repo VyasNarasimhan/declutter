@@ -15,9 +15,7 @@
     "permissions": [
         "tabs",
         "storage",
-        "alarms",
         "tabGroups",
-        "scripting",
         "activeTab"
     ],
     "content_scripts": [
